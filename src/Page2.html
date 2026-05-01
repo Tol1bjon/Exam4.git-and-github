@@ -71,13 +71,14 @@
       <section
         style="
           background-image: url(./page2-img/bg.png);
-          background-position: center;
+          background-position: start;
           background-repeat: no-repeat;
+          background-size: cover;
         "
         class="mt-[20px]"
       >
         <div
-          class="max-w-[1200px] m-auto flex flex-col gap-[30px] lg:flex-row justify-between items-center"
+          class="max-w-[1200px] m-auto flex flex-col gap-[30px] lg:flex-row justify-between items-center p-[10px]"
         >
           <aside class="flex flex-col gap-[30px] items-start">
             <p class="text-white text-[50px] font-bold">
@@ -99,50 +100,103 @@
           <img src="./page2-img/девушка с ребенком 1.png" alt="" />
         </div>
       </section>
-      <section class="max-w-[1200px] m-auto flex flex-col gap-[30px] lg:flex-row justify-center lg:justify-between items-center relative -top-[40px]">
-        <div class="bg-[#F0F6F9] flex flex-col gap-[30px] p-[20px] rounded-[10px] w-[370px] shadow-[0_12px_30px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12)]">
-            <p class="text-[22px] font-bold">Направления</p>
-            <hr>
-            <p>Акушерство</p>
-            <p>Косметология</p>
-            <p>Хирургия</p>
-            <p>Мануальная терапия</p>
-            <p>Психотерапия</p>
-            <button
-              class="py-[20px] px-[40px] rounded-[10px] text-white bg-[#00578A] font-bold"
-            >
-              Все услуги
-            </button>
-        </div> 
-        <div class="bg-[#F0F6F9] flex flex-col gap-[30px] p-[20px] rounded-[10px] w-[370px] shadow-[0_12px_30px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12)]">
-            <p class="text-[22px] font-bold">Диагностика</p>
-            <hr>
-            <p>МРТ</p>
-            <p>КТ</p>
-            <p>УЗИ</p>
-            <p>Рентген</p>
-            <p>Гастроскопия</p>
-            <button
-              class="py-[20px] px-[40px] rounded-[10px] text-white bg-[#00578A] font-bold"
-            >
-              Вся диагностика
-            </button>
-        </div> 
-        <div class="bg-[#F0F6F9] flex flex-col gap-[30px] p-[20px] rounded-[10px] w-[370px] shadow-[0_12px_30px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12)]">
-            <p class="text-[22px] font-bold">Детство</p>
-            <hr>
-            <p>Педиатр</p>
-            <p>Стоматолог</p>
-            <p>Дерматолог</p>
-            <p>Офтальмолог</p>
-            <p>Логопед</p>
-            <button
-              class="py-[20px] px-[40px] rounded-[10px] text-white bg-[#00578A] font-bold"
-            >
-              Все врачи
-            </button>
-        </div> 
+      <section
+        class="max-w-[1200px] m-auto flex flex-col gap-[30px] lg:flex-row justify-center lg:justify-between items-center relative -top-[40px]"
+      >
+        <div
+          class="bg-[#F0F6F9] flex flex-col gap-[30px] p-[20px] rounded-[10px] w-[370px] shadow-[0_12px_30px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12)]"
+        >
+          <p class="text-[22px] font-bold">Направления</p>
+          <hr />
+          <p>Акушерство</p>
+          <p>Косметология</p>
+          <p>Хирургия</p>
+          <p>Мануальная терапия</p>
+          <p>Психотерапия</p>
+          <button
+            class="py-[20px] px-[40px] rounded-[10px] text-white bg-[#00578A] font-bold"
+          >
+            Все услуги
+          </button>
+        </div>
+        <div
+          class="bg-[#F0F6F9] flex flex-col gap-[30px] p-[20px] rounded-[10px] w-[370px] shadow-[0_12px_30px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12)]"
+        >
+          <p class="text-[22px] font-bold">Диагностика</p>
+          <hr />
+          <p>МРТ</p>
+          <p>КТ</p>
+          <p>УЗИ</p>
+          <p>Рентген</p>
+          <p>Гастроскопия</p>
+          <button
+            class="py-[20px] px-[40px] rounded-[10px] text-white bg-[#00578A] font-bold"
+          >
+            Вся диагностика
+          </button>
+        </div>
+        <div
+          class="bg-[#F0F6F9] flex flex-col gap-[30px] p-[20px] rounded-[10px] w-[370px] shadow-[0_12px_30px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12)]"
+        >
+          <p class="text-[22px] font-bold">Детство</p>
+          <hr />
+          <p>Педиатр</p>
+          <p>Стоматолог</p>
+          <p>Дерматолог</p>
+          <p>Офтальмолог</p>
+          <p>Логопед</p>
+          <button
+            class="py-[20px] px-[40px] rounded-[10px] text-white bg-[#00578A] font-bold"
+          >
+            Все врачи
+          </button>
+        </div>
       </section>
+      <section
+        class="max-w-[1200px] m-auto flex flex-col gap-[30px] lg:flex-row justify-center lg:justify-between items-center"
+      >
+        <aside class="flex flex-col gap-[30px] p-[20px]">
+          <p class="text-[20px] text-[#D092C6]">Обратите внимание</p>
+          <p class="text-[48px] font-bold">
+            Приём детей <br />
+            до 15 лет
+          </p>
+          <div>
+            <p>
+              осуществляется только в присутствии <br />
+              законных представителей ребенка:
+            </p>
+            <ul class="list-disc pl-[20px] pt-[10px]">
+              <li>родители</li>
+              <li>опекуны</li>
+              <li>попечители</li>
+            </ul>
+          </div>
+          <div>
+            <p>Основание:</p>
+            <p>ФЗ РФ №323 от 21.11.2011 г., ст. 20 часть 2</p>
+          </div>
+        </aside>
+        <aside
+          class="bg-[#F5F9FB] px-[30px] py-[100px] rounded-[10px] flex flex-col gap-[40px] items-start"
+        >
+          <p>
+            Если Вашего ребенка привели в клинику родственники (даже самые
+            близкие) или <br> знакомые, предварительно на сопровождающего необходимо
+            оформить доверенность<br> от имени одного из родителей. Без такой
+            доверенности оказание медицинских услуг<br> ребенку невозможно. Бланк
+            доверенности можно скачать ниже.
+          </p>
+          <button
+            class="py-[10px] px-[30px] rounded-[5px] text-[#017CC1] bg-transparent border-2  border-[#017CC1] flex items-center gap-[20px]"
+          >
+            Скачать
+            <img src="./page2-img/Group 9325.png" alt="">
+          </button>
+          <p class="text-[20px] font-bold border-l-6 pl-[20px] border-[#00578A]">Бабушки, дедушки, братья, сестры, тети, дяди законными <br> представителями ребенка не являются</p>
+        </aside>
+      </section>
+      
     </main>
   </body>
 </html>
